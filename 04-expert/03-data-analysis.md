@@ -552,7 +552,7 @@ jupyter lab
 ```
 
 ### 매직 명령
-```python
+```ipython
 %timeit sum(range(1000))
 %matplotlib inline           # 인라인 그래프
 %load_ext autoreload         # 자동 리로드

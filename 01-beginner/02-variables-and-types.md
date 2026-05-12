@@ -25,12 +25,12 @@ age2 = 30
 _private = "private"
 ```
 
-❌ **불가능한 이름**
+❌ **불가능한 이름** (다음은 모두 SyntaxError 가 발생합니다)
 ```python
-2age = 30          # 숫자로 시작 불가
-user-name = "x"    # 하이픈 불가
-class = "A"        # 예약어 사용 불가
-my var = 10        # 공백 불가
+# 2age = 30          # 숫자로 시작 불가
+# user-name = "x"    # 하이픈 불가
+# class = "A"        # 예약어 사용 불가
+# my var = 10        # 공백 불가
 ```
 
 ### PEP 8 권장 명명 규칙

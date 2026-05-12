@@ -33,7 +33,7 @@ t = timeit.timeit(my_function, number=1000)
 ```
 
 ### 1.2 IPython/Jupyter 매직 명령
-```python
+```ipython
 %timeit "-".join(str(n) for n in range(100))
 %%timeit
 result = []
@@ -156,9 +156,9 @@ items_set = set(range(10000))
 # set: O(1) — 빠름!
 9999 in items_set
 
-# 시간 비교
-%timeit 9999 in items_list   # ~100 µs
-%timeit 9999 in items_set    # ~30 ns
+# 시간 비교 (IPython/Jupyter)
+# %timeit 9999 in items_list   # ~100 µs
+# %timeit 9999 in items_set    # ~30 ns
 ```
 
 | 연산 | list | set/dict | tuple | deque |
@@ -329,8 +329,8 @@ print(f"{time.time() - start:.4f}s")
 
 매우 빠르지만 빌드 단계 필요.
 
-```python
-# example.pyx
+```cython
+# example.pyx (Cython 코드 — 표준 Python 신택스가 아닙니다)
 def fast_sum(int n):
     cdef int total = 0
     cdef int i

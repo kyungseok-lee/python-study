@@ -497,13 +497,13 @@ async def good():
 
 ### 12.3 너무 많은 동시 작업
 ```python
-# ❌ 메모리 문제 가능
-async def bad():
-    tasks = [fetch(url) for url in 100000_urls]
+# ❌ 메모리 문제 가능 (urls 가 100,000개 이상이라고 가정)
+async def bad(urls):
+    tasks = [fetch(url) for url in urls]
     await asyncio.gather(*tasks)
 
 # ✅ Semaphore 로 제한
-async def good():
+async def good(urls):
     sem = asyncio.Semaphore(100)
 
     async def bounded_fetch(url):

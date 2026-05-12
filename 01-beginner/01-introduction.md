@@ -139,7 +139,7 @@ Hello, World!
 
 터미널에서 `python3` 만 입력하면 대화형 모드로 진입합니다.
 
-```python
+```pycon
 >>> 1 + 1
 2
 >>> print("Hello")
@@ -154,7 +154,7 @@ I love Python!
 
 Python의 철학을 확인해보세요.
 
-```python
+```pycon
 >>> import this
 ```
 
