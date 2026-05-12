@@ -79,6 +79,7 @@ dmypy.json
 *.bak
 *~
 
-# OMC / Serena 도구 메타데이터
+# OMC / Serena / Claude 도구 메타데이터
 .omc/
 .serena/
+.claude/

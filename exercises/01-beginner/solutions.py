@@ -4,6 +4,8 @@
 먼저 스스로 풀어본 후 참고하세요!
 """
 
+from typing import Any
+
 # === 문제 4.1: FizzBuzz ===
 def fizzbuzz(n: int = 100) -> None:
     for i in range(1, n + 1):
@@ -98,7 +100,7 @@ def count_words(text: str) -> dict[str, int]:
 
 
 # === 문제 6.5: 가장 빈도 높은 요소 ===
-def most_common(items: list) -> any:
+def most_common(items: list) -> Any:
     from collections import Counter
     return Counter(items).most_common(1)[0][0]
 
